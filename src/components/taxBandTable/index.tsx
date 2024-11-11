@@ -15,8 +15,8 @@ const TaxBandTable: React.FC<ITaxTable> = ({ data }) => {
         </tr>
       </thead>
       <tbody>
-        {data.map((item, index) => (
-          <tr key={index}>
+        {data.map((item) => (
+          <tr key={item.band.min}>
             <td>
               {formatCurrency(item.band.min)} - {item.band.max !== undefined ? formatCurrency(item.band.max) : 'and up'}
             </td>
