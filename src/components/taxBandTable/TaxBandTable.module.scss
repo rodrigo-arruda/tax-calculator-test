@@ -1,0 +1,20 @@
+.taxTable {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+.taxTable th,
+.taxTable td {
+  padding: 8px;
+  border: 1px solid #ddd;
+}
+
+.taxTable th {
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.taxTable td {
+  text-align: right;
+}

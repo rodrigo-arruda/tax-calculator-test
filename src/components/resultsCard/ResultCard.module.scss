@@ -1,0 +1,36 @@
+.wrapper {
+  display: flex;
+  background-color: #1b64ef;
+  flex-direction: column;
+  border-radius: 8px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  padding: 1rem 2rem;
+  margin-bottom: 1rem;
+  width: 78%;
+}
+
+.resultsContentWrapper {
+  display: flex;
+
+  h2,
+  h3 {
+    margin: 1rem 0;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+}
+
+.summary {
+  margin-right: 5%;
+  width: 35%;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+}
+
+.table {
+  width: 60%;
+  background-color: white;
+  border-radius: 8px;
+  padding: 0 1rem 1rem;
+}

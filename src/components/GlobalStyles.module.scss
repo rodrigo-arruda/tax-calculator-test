@@ -1,0 +1,98 @@
+.fieldsWrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+
+  gap: 0.5rem;
+
+  label {
+    font-weight: 600;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 0.25rem;
+    width: 100%;
+    text-align: left;
+  }
+
+  select,
+  input {
+    width: 100%;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      border-color: #007bff;
+    }
+
+    &:focus {
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+
+    option {
+      background-color: #fff;
+      color: #333;
+      padding: 1rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #007bff;
+        color: #fff;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    label {
+      font-size: 0.875rem;
+    }
+
+    select,
+    input {
+      width: 100%;
+    }
+  }
+}
+
+.inputWrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 100%;
+
+  .dollarSign {
+    font-size: 1.2rem;
+    background-color: #f1f1f1;
+    color: #333;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+
+  input {
+    width: 100%;
+    padding-left: 30px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    outline: none;
+    transition: all 0.3s ease-in-out;
+
+    &:hover,
+    &:focus {
+      border-color: #007bff;
+    }
+
+    &:focus {
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    }
+  }
+}

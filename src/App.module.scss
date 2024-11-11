@@ -1,0 +1,50 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.contentWrapper {
+  display: flex;
+}
+
+.formWrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem;
+  margin-right: 2%;
+  width: 20%;
+  height: 150px;
+  margin-top: 1rem;
+
+  button {
+    align-self: center;
+    margin: 1rem 0;
+    padding: 0.6rem 1.1rem;
+    background-color: #f74e01;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 200px;
+
+    &:hover {
+      background-color: #1b64ef;
+    }
+
+    &:disabled {
+      background-color: #d6d6d6;
+      color: #a1a1a1;
+      cursor: not-allowed;
+      border: 1px solid #ccc;
+
+      &:hover {
+        background-color: #d6d6d6;
+      }
+    }
+  }
+
+  input {
+    max-width: 94%;
+  }
+}
