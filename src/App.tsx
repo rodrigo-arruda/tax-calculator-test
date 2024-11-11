@@ -77,13 +77,19 @@ function App(): React.ReactElement {
 
       {!loading && !error && (
         <section className={classes.contentWrapper}>
-          <div className={classes.formWrapper}>
+          <form
+            className={classes.formWrapper}
+            onSubmit={(e: React.FormEvent) => {
+              e.preventDefault();
+              handleCalculate();
+            }}
+          >
             <YearSelector year={year} setYear={setYear} />
             <SalaryInput salary={salary} setSalary={setSalary} />
-            <button type="button" onClick={handleCalculate} disabled={salary === 0}>
+            <button type="submit" disabled={salary === 0}>
               Calculate
             </button>
-          </div>
+          </form>
           {renderResult}
         </section>
       )}
